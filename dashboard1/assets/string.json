@@ -1,0 +1,23 @@
+{
+    "TITLE":"Admin Dashboard",
+    "SEARCH": "Search",
+    "DASHBOARD": "Dashboard",
+    "USERS": "Users",
+    "ANALYTICS": "Analytics",
+    "TRANSACTIONS": "Transactions",
+    "REPORTS": "Reports",
+    "SUPPORT": "Support",
+    "SETTINGS": "Settings",
+    "TOTAL_SALES": "Total Sales",
+    "TOTAL_VIEWS": "Total Views",
+    "TOTAL_REVENUE": "Total Revenue",
+    "USERNAME": "Juan Dela Cruz",
+    "USER_1": "Nico Malcolm",
+    "USER_2": "Valeria Ash",
+    "USER_3": "John Smith",
+    "TRANSACTION": "Transaction",
+    "PENDING": "Pending",
+    "VIEW": "View",
+    "DELETE": "Delete",
+    "ADMIN": "Admin"
+}

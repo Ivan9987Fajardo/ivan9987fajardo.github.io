@@ -1,0 +1,103 @@
+$white: #FFFFFF;
+$base: #CC99FF;
+$border: #CCCCCC;
+$text: #555555;
+//Reset
+@font-face {
+    font-family: "Inter";
+    src: url("assets/Inter-Regular.ttf") format("truetype");
+}
+* {
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+:host, body {
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    display: flex;
+    height: 60px;
+    background-color: $white;
+    border-bottom: 2px solid $base;
+    padding: 0 50px;
+    align-items: center;
+
+    &__Title {
+        font-size: 24px;
+        width: 20%;
+    }
+
+    &__Search {
+        width: 60%;
+        display: flex;
+        justify-content: center; 
+
+        &Input{
+            display: flex;
+            align-items: center;
+            border: 1px solid $border;
+            width: 50%;
+            height: 30px;
+            border-radius: 5px;
+            color: $border;
+            padding-left: 0.5rem;
+            
+
+            input {
+                border: none;
+                height: 28px;
+                margin-left: 5px;
+                width: 80%;
+            }
+        }
+        &Button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $base;
+            height: 30px;
+            width: 5rem;
+            margin-left: auto;
+            color: $white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            &:hover {
+                background-color: darken($base, 10%);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__Information {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+        width: 20%;
+        justify-content: flex-end;
+        color: $text;
+
+        &User {
+            display:flex ;
+            align-items: center;
+            gap: 1rem;
+        }
+        &Name {
+            display: flex;
+            flex-direction: column;
+
+            span:last-child {
+                font-size: 14px;
+                color: #999999;
+            }
+        }
+    }
+    
+}

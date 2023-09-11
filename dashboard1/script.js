@@ -52,17 +52,25 @@ function injectAll() {
     })
 }
 
-var test = {
-    test: 'String Test'
-}
-
-function injectString(doc) {
-    console.log(doc);
-    doc.querySelectorAll("div[str]")
+async function injectString(doc) {
+    const stringList = await getStrings();
+    doc.querySelectorAll("span[str]")
             .forEach((elem) => {
-                elem.innerHTML = test[elem.getAttribute("str")];
+                elem.innerHTML = stringList[elem.getAttribute("str")];
     })
 }
 
+async function getStrings(){
+    const URL='assets/string.json';
+    const Res= fetch(URL);
+    const response= await Res;
+    const json= await response.json();
+    return json;
+ }
+
+
+
+
 injectAll();
 injectString(document);
+
