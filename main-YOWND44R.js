@@ -1,0 +1,1 @@
+import{G as r,I as p,T as t}from"./chunk-5KAGERKV.js";var e=[{path:"",loadChildren:()=>import("./chunk-PEIXMJME.js").then(o=>o.HomeModule)}];var i={providers:[p(e)]};r(t,i).catch(o=>console.error(o));
